@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
+
     <title>Bootstrap Sandbox</title>
 </head>
 
@@ -46,6 +47,7 @@
                             <a class="dropdown-item" href="3_8_tables_pagination.html">3.8 Tables & Pagination</a>
                             <a class="dropdown-item" href="3_9_cards.html">3.9 Cards</a>
                             <a class="dropdown-item" href="3_10_media_object.html">3.10 Media Objects</a>
+                            <a class="dropdown-item" href="3_11_jumbotron.html">3.11 Jumbotron</a>
                         </div>
                     </div>
                 </div>
@@ -73,6 +75,7 @@
                             <a class="dropdown-item" href="5_4_tooltips.html">5.4 Tooltips</a>
                             <a class="dropdown-item" href="5_5_popovers.html">5.5 Popovers</a>
                             <a class="dropdown-item" href="5_6_modals.html">5.6 Modals</a>
+                            <a class="dropdown-item" href="5_7_scrollspy.html">5.7 ScrollSpy</a>
                         </div>
                     </div>
                 </div>
@@ -82,23 +85,25 @@
     </header>
 
     <div class="container">
-        <!--########################START HERE#########################-->
+        <!--##################START HERE####################-->
 
         <!-- WIDTH CLASSES -->
-        <div>Width 25%</div>
-        <div>Width 50%</div>
-        <div>Width 75%</div>
-        <div>Width 100%</div>
+        <div class="bg-success p-3">Width 25%</div>
+        <div class="bg-success p-3">Width 50%</div>
+        <div class="bg-success p-3">Width 75%</div>
+        <div class="bg-success p-3">Width 100%</div>
+        <div class="bg-success p-3">Width Auto</div>
 
         <br>
         <br>
 
         <!-- HEIGHT CLASSES -->
-        <div style="height:300px;border:1px solid #333;">
-            <div>Height 25%</div>
-            <div>Height 50%</div>
-            <div>Height 75%</div>
-            <div>Height 100%</div>
+        <div>
+            <div class="bg-primary d-inline-block">Height 25%</div>
+            <div class="bg-primary d-inline-block">Height 50%</div>
+            <div class="bg-primary d-inline-block">Height 75%</div>
+            <div class="bg-primary d-inline-block">Height 100%</div>
+            <div class="bg-primary d-inline-block">Height Auto</div>
         </div>
 
         <br>
@@ -106,6 +111,15 @@
 
         <!-- BORDERS -->
         <div class="p-3 mb-2 bg-light">Regular</div>
+        <div class="p-3 mb-2 bg-light">Border Top</div>
+        <div class="p-3 mb-2 bg-light">Border Bottom</div>
+        <div class="p-3 mb-2 bg-light">Border Right</div>
+        <div class="p-3 mb-2 bg-light">Border Left</div>
+
+        <br>
+        <br>
+
+        <!-- BORDER COLORS -->
         <div class="p-3 mb-2 bg-light">Primary</div>
         <div class="p-3 mb-2 bg-light">Secondary</div>
         <div class="p-3 mb-2 bg-light">Success</div>
@@ -116,15 +130,27 @@
         <div class="p-3 mb-2 bg-light">Dark</div>
         <div class="p-3 mb-2 bg-light">White</div>
 
+        <br>
+        <br>
+
+        <!-- BORDER RADIUS -->
+        <div class="p-3 mb-2 bg-light">Rounded</div>
+        <div class="p-3 mb-2 bg-light">Rounded Top</div>
+        <div class="p-3 mb-2 bg-light">Rounded Bottom</div>
+        <div class="p-3 mb-2 bg-light">Rounded Right</div>
+        <div class="p-3 mb-2 bg-light">Rounded Left</div>
+        <div class="p-3 mb-2 bg-light">Rounded Circle</div>
+        <div class="p-3 mb-2 bg-light">Dark</div>
+
     </div>
     <!-- ./container -->
     <div style="margin-top:500px;"></div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
 </body>
 

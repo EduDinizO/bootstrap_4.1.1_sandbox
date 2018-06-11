@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
 	    crossorigin="anonymous">
 
 	<title>Bootstrap Sandbox</title>
@@ -47,6 +47,7 @@
 							<a class="dropdown-item" href="3_8_tables_pagination.html">3.8 Tables & Pagination</a>
 							<a class="dropdown-item" href="3_9_cards.html">3.9 Cards</a>
 							<a class="dropdown-item" href="3_10_media_object.html">3.10 Media Objects</a>
+							<a class="dropdown-item" href="3_11_jumbotron.html">3.11 Jumbotron</a>
 						</div>
 					</div>
 				</div>
@@ -74,6 +75,7 @@
 							<a class="dropdown-item" href="5_4_tooltips.html">5.4 Tooltips</a>
 							<a class="dropdown-item" href="5_5_popovers.html">5.5 Popovers</a>
 							<a class="dropdown-item" href="5_6_modals.html">5.6 Modals</a>
+							<a class="dropdown-item" href="5_7_scrollspy.html">5.7 ScrollSpy</a>
 						</div>
 					</div>
 				</div>
@@ -83,29 +85,35 @@
 	</header>
 
 	<div class="container">
-		<!--########################START HERE#########################-->
+		<!--####################START HERE######################-->
 
 		<!-- HEADINGS -->
+		<!-- font-size = x -->
 		<h1>Heading One</h1>
 		<h2>Heading Two</h2>
 		<h3>Heading Three</h3>
 		<h4>Heading Four</h4>
-		<h5>Heading Five</h5>
+		<h5 class="h1">Heading Five</h5>
 		<h6>Heading Six</h6>
 
 		<!-- DISPLAY CLASSES -->
-		<h1>Display Heading 1</h1>
-		<h1>Display Heading 2</h1>
-		<h1>Display Heading 3</h1>
-		<h1>Display Heading 4</h1>
+		<!-- font-size = x, font-weight = 300 e line height = 1.1 -->
+		<h1 class="display-1">Display Heading 1</h1>
+		<h1 class="display-2">Display Heading 2</h1>
+		<h1 class="display-3">Display Heading 3</h1>
+		<h1 class="display-4">Display Heading 4</h1>
 
 		<!-- PARAGRAPHS -->
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam voluptatem
 			quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</p>
 
 		<!-- LEAD -->
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam voluptatem
+		<!-- font-size = 1.25rem font-weigth = 300-->
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam voluptatem
 			quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</p>
+
+		<!-- MONOSPACE PARAGRAPH -->
+		<p class="text-monospace">My monospace paragraph</p>
 
 		<!-- STYLE CLASSES -->
 		<p>Bold Text</p>
@@ -116,6 +124,9 @@
 		<p>MAKE LOWERCASE</p>
 		<p>make uppercase</p>
 		<p>make capitalized</p>
+
+		<br>
+		<br>
 
 		<!-- BLOCKQUOTES -->
 		<blockquote>
@@ -135,6 +146,19 @@
 			</footer>
 		</blockquote>
 
+		<br>
+		<br>
+
+		<!-- TEXT TRUNCATE -->
+		<div>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat nobis sunt qui consequatur architecto veritatis,
+			iure odit, debitis pariatur perspiciatis? Asperiores facere veniam, totam ullam dignissimos voluptate atque! Eos, animi
+			quos. Sint magni nulla provident et consequatur officia tempora!
+		</div>
+
+		<br>
+		<br>
+
 		<!-- LISTS -->
 		<ul>
 			<li>Lorem ipsum dolor sit amet.</li>
@@ -153,11 +177,11 @@
 
 	<div style="margin-top:500px;"></div>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 	    crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 	    crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
 	    crossorigin="anonymous"></script>
 </body>
 
